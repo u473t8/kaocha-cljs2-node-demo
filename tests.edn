@@ -1,0 +1,8 @@
+#kaocha/v1
+ {:plugins [:kaocha.plugin/hooks]
+  :tests   [{:id                         :node
+             :type                       :kaocha.type/cljs2
+             :kaocha.hooks/pre-load-test [kaocha-hooks/pre-load-test]
+             :node/main-js               "out/node/test.js"
+             :test-paths                 ["test"]
+             :shadow/build               :node}]}

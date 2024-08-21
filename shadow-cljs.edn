@@ -1,0 +1,6 @@
+{:deps   {:aliases [:test]}
+ :builds {:node {:target    :node-test
+                 ;; this suppresses debug logs from the shadow-runner
+                 :closure-defines {goog.DEBUG false}
+                 :output-to "out/node/test.js"
+                 :main      kaocha.cljs2.shadow-runner/start}}}

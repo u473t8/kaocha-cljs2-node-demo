@@ -1,0 +1,10 @@
+/.clj-kondo/
+/.cpcache/
+/.lsp/
+/.projectile
+/.shadow-cljs/
+/.store/
+/funnel.log
+/funnel.log.lck
+/node_modules/
+/out/
